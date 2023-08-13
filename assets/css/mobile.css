@@ -1,0 +1,43 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 979px) {
+
+    /* INICIO HEADER */
+    header div.burger-menu-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 8vh;
+    }
+
+    header i.burger-menu-icon {
+        margin: 0px 25px;
+        cursor: pointer;
+    }
+
+    header ul.navigation-menu {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    header ul.navigation-menu li {
+        padding: 35px 25px;
+    }
+    /* FIM HEADER */
+
+
+    /* INICIO SLIDE */
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .prev,
+    .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    
+    /* FIM SLIDE */
+}
