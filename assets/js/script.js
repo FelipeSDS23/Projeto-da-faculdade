@@ -5,6 +5,7 @@
     const header = document.querySelector("#header");
     const mainContent = document.querySelector("#main-content");
     const listaDeOpcoesMenu = menuMobile.querySelectorAll("a");
+    const footer = document.querySelector("#footer");
 
     burgerMenuBtn.addEventListener("click", openCloseMenu);
     window.addEventListener("resize", resize);
@@ -15,11 +16,13 @@
         if(menuMobile.style.display === "flex"){
             menuMobile.style.display = "none";
             mainContent.style.display = "block";
+            footer.style.display = "flex";
             burgerMenuBtn.classList.remove("fa-xmark");
             burgerMenuBtn.classList.add("fa-bars");
         } else {
             menuMobile.style.display = "flex";
             mainContent.style.display = "none";
+            footer.style.display = "none";
             burgerMenuBtn.classList.remove("fa-bars");
             burgerMenuBtn.classList.add("fa-xmark");
         }
@@ -29,10 +32,12 @@
         if (innerWidth >= 979) {
             menuMobile.style.display = "flex";
             mainContent.style.display = "block";
+            footer.style.display = "flex";
             // header.style.backgroundColor = "white";
         } else {
             menuMobile.style.display = "none";
             mainContent.style.display = "block";
+            footer.style.display = "flex";
             burgerMenuBtn.classList.remove("fa-xmark");
             burgerMenuBtn.classList.add("fa-bars");
             // header.style.backgroundColor = "#00000000";
@@ -43,6 +48,7 @@
         opcoesMenu.forEach(opcao => {
             opcao.addEventListener("click", function(){
                 mainContent.style.display = "block";
+                footer.style.display = "flex";
                 if (innerWidth <= 979){
                     openCloseMenu();  
                 };

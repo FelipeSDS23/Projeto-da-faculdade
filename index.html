@@ -34,7 +34,7 @@
                     <li><a href="#section-slide">DESTAQUES</a></li>
                     <li><a href="#sobre">DESTINOS</a></li>
                     <li><a href="#habilidades">HISTÓRIA</a></li>
-                    <li><a href="#meus-projetos">CONTATOS</a></li>
+                    <li><a href="#section-contact">CONTATOS</a></li>
 
                     <div class="mode-container">
                         <div>
@@ -94,7 +94,30 @@
     <!-- FIM SLIDE -->
         
 
+    <!-- INICIO CONTATO -->
+        <section class="section-contact" id="section-contact" class="section-contact">
+            <h2>CONTATO</h2>
+    
+            <form action="https://formsubmit.co/felipe03san@gmail.com" method="POST" class="form">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required placeholder="Digite sua mensagem aqui"></textarea>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                <button type="submit">Enviar</button>
+            </form>
+        
+        </section>
+    <!-- FIM CONTATO -->
     </main>
+
+    <footer class="footer flex-container" id="footer">
+        <p>Criado por Felipe Santos</p>
+        <a href="https://www.linkedin.com/in/felipe-santos-7296b8213/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="https://github.com/FelipeSDS23" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>

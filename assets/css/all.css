@@ -277,4 +277,106 @@ body {
         font-size: 14px;
     }
 } */
+
 /* FIM SLIDE */
+
+
+/* INICIO CONTATO */
+.section-contact{
+    /* background-color: #0332613a; */
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-contact h2 {
+    font-size: 2rem;
+    /* color: #fff; */
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.form {
+    width: 90%;
+    max-width: 32rem;
+    font-size: 1.1rem;
+
+    background-color: #232c35;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 100%;
+}
+
+.form label{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: none;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow:  0 0 0 3px #4dc8ff;
+}
+
+.form button {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+    outline: none;
+    background-color: #09d;
+}
+/* FIM CONTATO */
+
+
+/* FOOTER */
+.footer {
+    min-height: 50px;
+    /* font-weight: bold; */
+    background-color: black;
+    color: white;
+}
+
+.footer a, p{
+    margin: 5px;
+}
+/* FIM DO FOOTER */
