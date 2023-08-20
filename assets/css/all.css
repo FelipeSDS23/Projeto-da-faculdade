@@ -299,6 +299,24 @@ body {
     line-height: 1.2;
 }
 
+
+
+.form-section-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.contact-text-container span{
+    color: #09d;
+    font-weight: bold;
+}
+
+.contact-text-container p{
+     text-align: center;
+}
+
+
+
 .form {
     width: 90%;
     max-width: 32rem;
@@ -326,7 +344,7 @@ body {
 .form input,
 .form textarea{
     font: inherit;
-    padding: 0.8rem;
+    padding: 0.6rem;
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: 8px;

@@ -1,4 +1,3 @@
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 980px) {
 
     /* INICIO HEADER */
@@ -12,7 +11,7 @@
     }
 
     header ul.navigation-menu li {
-        padding: 20px 75px;
+        padding: 20px 60px;
     }
 
     header ul.navigation-menu li a{
@@ -43,4 +42,24 @@
     /* INICIO SLIDE */
 
     /* FIM SLIDE */
+
+
+    /* INICIO CONTATO */
+    .contact-text-container {
+        width: 50vw;
+        max-width: 1300px;
+    }
+
+    .contact-text-container span{
+        font-size: 1.6em;
+    }
+
+    .contact-text-container p{
+        font-size: 1.2em;
+    }
+    
+    .contact-form-container {
+        width: 48vw;
+    }
+    /* FIM CONTATO */
 }
