@@ -24,6 +24,7 @@
     header ul.navigation-menu li {
         padding: 35px 25px;
     }
+
     /* FIM HEADER */
 
 
@@ -38,7 +39,7 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
     }
-    
+
     /* FIM SLIDE */
 
 
@@ -65,17 +66,15 @@
         width: 100%;
     }
 
-    .contact-text-container span{
+    .contact-text-container span {
         font-size: 1.3em;
     }
- 
-    .contact-text-container p{
-         margin-bottom: 30px;
+
+    .contact-text-container p {
+        margin-bottom: 30px;
     }
-    
-    .contact-form-container {
-        
-    }
+
+    .contact-form-container {}
 
 
 
@@ -84,7 +83,7 @@
 
         font-size: 1rem;
 
-        padding: 30px 10px;
+        padding: 20px 10px;
         border-radius: 10px;
     }
 
@@ -96,15 +95,19 @@
         height: 35px;
     }
 
-    .form label{
+    .form label {
         color: #fff;
         line-height: 1;
         margin-bottom: 0;
     }
 
-    .form textarea{
+    .form textarea {
         min-height: 10rem;
         resize: none;
+    }
+
+    .form button {
+        padding: .6rem;
     }
 
     /* FIM CONTATO */

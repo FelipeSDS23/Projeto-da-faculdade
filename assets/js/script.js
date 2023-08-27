@@ -1,4 +1,4 @@
-;(function(){
+; (function () {
     // INICIO HEADER
     const burgerMenuBtn = document.querySelector("#burger-menu-btn");
     const menuMobile = document.querySelector("#menu-mobile");
@@ -12,8 +12,8 @@
 
     controlaMenuMobile(listaDeOpcoesMenu);
 
-    function openCloseMenu(){
-        if(menuMobile.style.display === "flex"){
+    function openCloseMenu() {
+        if (menuMobile.style.display === "flex") {
             menuMobile.style.display = "none";
             mainContent.style.display = "block";
             footer.style.display = "flex";
@@ -28,7 +28,7 @@
         }
     };
 
-    function resize(){
+    function resize() {
         if (innerWidth >= 979) {
             menuMobile.style.display = "flex";
             mainContent.style.display = "block";
@@ -44,13 +44,13 @@
         }
     };
 
-    function controlaMenuMobile(opcoesMenu){
+    function controlaMenuMobile(opcoesMenu) {
         opcoesMenu.forEach(opcao => {
-            opcao.addEventListener("click", function(){
+            opcao.addEventListener("click", function () {
                 mainContent.style.display = "block";
                 footer.style.display = "flex";
-                if (innerWidth <= 979){
-                    openCloseMenu();  
+                if (innerWidth <= 979) {
+                    openCloseMenu();
                 };
             });
         });
@@ -58,40 +58,40 @@
     // FIM HEADER
 
 
-    /* INICIO COLOR MODE */
+    // INICIO COLOR MODE
 
     const chk = document.querySelector("#chk");
-    
+
     chk.addEventListener("change", modoEscuro);
     window.addEventListener("load", armazenaModoNoLocal);
 
-    function armazenaModoNoLocal(){
+    function armazenaModoNoLocal() {
         let local = localStorage.getItem("modoSalvo");
         local = JSON.parse(local);
-        if(!local) return;
-        if(local.modo){
+        if (!local) return;
+        if (local.modo) {
             modoEscuro();
             chk.checked = true;
         }
     }
-    
+
     let dark = false;
 
     function modoEscuro() {
         dark = !dark;
-        const modoAtual = JSON.stringify({modo: dark});
+        const modoAtual = JSON.stringify({ modo: dark });
         localStorage.setItem("modoSalvo", modoAtual);
 
         const body = document.querySelector("body");
         body.classList.toggle("dark-mode");
         header.classList.toggle("dark-mode");
     }
-    /* FIM COLOR MODE */
+    // FIM COLOR MODE
 })();
 
 
-(function(){
-     /* INICIO SLIDE */
+(function () {
+    // INICIO SLIDE
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
 
@@ -151,9 +151,31 @@
         }
 
         showSlides();
-        
+
     })
-    /* FIM SLIDE */
+    // FIM SLIDE
+
+
+    // INICIO SEÇÃO DESTINOS
+
+    const verMaisBtn = document.querySelector("#ver-mais-btn");
+    const cartoesProjetos = Array.from(document.querySelectorAll("#show-hide"));
+
+    verMaisBtn.addEventListener("click", function () {
+        cartoesProjetos.forEach(cartao => {
+            if (cartao.classList.contains("hide")) {
+                cartao.classList.remove("hide");
+                cartao.classList.add("show");
+                verMaisBtn.innerText = "Mostrar menos";
+            } else {
+                cartao.classList.remove("show");
+                cartao.classList.add("hide");
+                verMaisBtn.innerText = "Mostrar mais";
+            }
+        })
+    })
+
+    // FIM SECAO DESTINOS
 })();
 
 

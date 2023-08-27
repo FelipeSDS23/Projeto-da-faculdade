@@ -14,12 +14,12 @@
         padding: 20px 60px;
     }
 
-    header ul.navigation-menu li a{
+    header ul.navigation-menu li a {
         width: max-content;
         position: relative;
     }
 
-    header ul.navigation-menu li a::after{
+    header ul.navigation-menu li a::after {
         content: " ";
         width: 100%;
         height: 2px;
@@ -36,6 +36,7 @@
         width: 100%;
         transform: scaleX(1);
     }
+
     /* FIM HEADER */
 
 
@@ -50,16 +51,17 @@
         max-width: 1300px;
     }
 
-    .contact-text-container span{
+    .contact-text-container span {
         font-size: 1.6em;
     }
 
-    .contact-text-container p{
+    .contact-text-container p {
         font-size: 1.2em;
     }
-    
+
     .contact-form-container {
         width: 48vw;
     }
+
     /* FIM CONTATO */
 }
