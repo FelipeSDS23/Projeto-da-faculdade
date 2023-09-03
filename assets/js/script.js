@@ -158,22 +158,22 @@
 
     // INICIO SEÇÃO DESTINOS
 
-    const verMaisBtn = document.querySelector("#ver-mais-btn");
-    const cartoesProjetos = Array.from(document.querySelectorAll("#show-hide"));
+    // const verMaisBtn = document.querySelector("#ver-mais-btn");
+    // const cartoesProjetos = Array.from(document.querySelectorAll("#show-hide"));
 
-    verMaisBtn.addEventListener("click", function () {
-        cartoesProjetos.forEach(cartao => {
-            if (cartao.classList.contains("hide")) {
-                cartao.classList.remove("hide");
-                cartao.classList.add("show");
-                verMaisBtn.innerText = "Mostrar menos";
-            } else {
-                cartao.classList.remove("show");
-                cartao.classList.add("hide");
-                verMaisBtn.innerText = "Mostrar mais";
-            }
-        })
-    })
+    // verMaisBtn.addEventListener("click", function () {
+    //     cartoesProjetos.forEach(cartao => {
+    //         if (cartao.classList.contains("hide")) {
+    //             cartao.classList.remove("hide");
+    //             cartao.classList.add("show");
+    //             verMaisBtn.innerText = "Mostrar menos";
+    //         } else {
+    //             cartao.classList.remove("show");
+    //             cartao.classList.add("hide");
+    //             verMaisBtn.innerText = "Mostrar mais";
+    //         }
+    //     })
+    // })
 
     // FIM SECAO DESTINOS
 })();
