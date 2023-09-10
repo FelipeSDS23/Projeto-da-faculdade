@@ -24,11 +24,13 @@
     header ul.navigation-menu li {
         padding: 35px 25px;
     }
-
     /* FIM HEADER */
 
 
     /* INICIO SLIDE */
+    .section-slide {
+        padding: 60px 0px 0px 0px;
+    }
 
     .slideshow-container {
         max-width: 100%;
@@ -39,31 +41,26 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
     }
-
     /* FIM SLIDE */
 
 
     /* INICIO HISTORIA */
     .section-historia {
-        
+        padding-top: 40px;
     }
     /* FIM HISTORIA */
 
 
     /* INICIO CONTATO */
-
-    /* .section-contact{
-        background-color: #232c356b;
-    } */
+    .section-contact{
+        padding-top: 60px;
+    }
 
     .section-contact h2 {
         font-size: 1.4rem;
-        /* color: #fff; */
         margin-bottom: 1.5rem;
         line-height: 1;
     }
-
-
 
     .form-section-container {
         flex-direction: column;
@@ -81,15 +78,9 @@
         margin-bottom: 30px;
     }
 
-    .contact-form-container {}
-
-
-
     .form {
         width: 95vw;
-
         font-size: 1rem;
-
         padding: 20px 10px;
         border-radius: 10px;
     }
@@ -116,6 +107,5 @@
     .form button {
         padding: .6rem;
     }
-
     /* FIM CONTATO */
 }

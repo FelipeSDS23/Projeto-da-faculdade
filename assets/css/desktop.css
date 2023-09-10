@@ -40,14 +40,9 @@
     /* FIM HEADER */
 
 
-    /* INICIO SLIDE */
-
-    /* FIM SLIDE */
-
-
     /* INICIO HISTORIA */
     .section-historia {
-        
+        padding-top: 40px;
     }
     /* FIM HISTORIA */
 
@@ -69,6 +64,5 @@
     .contact-form-container {
         width: 48vw;
     }
-
     /* FIM CONTATO */
 }

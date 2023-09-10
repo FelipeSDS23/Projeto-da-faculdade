@@ -1,14 +1,15 @@
+body {
+    background-color: #57A2BA55;
+}
+
 main {
     padding: 30px 10px;
-    /* height: 100vh;
-    width: 100vw; */
-    background-color: #57A2BA55;
 }
 
 h1 {
     text-align: center;
     padding: 10px 0px;
-    /* color: #57A2BA55; */
+    color: #09d;
 }
 
 .main-div {
@@ -44,8 +45,8 @@ button {
     cursor: pointer;
     font-weight: bold;
     margin: 20px;
+    transition: .5s;
 }
-
 
 button:hover {
     background-color: #57A2BA;

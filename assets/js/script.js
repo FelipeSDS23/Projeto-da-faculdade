@@ -2,7 +2,6 @@
     // INICIO HEADER
     const burgerMenuBtn = document.querySelector("#burger-menu-btn");
     const menuMobile = document.querySelector("#menu-mobile");
-    const header = document.querySelector("#header");
     const mainContent = document.querySelector("#main-content");
     const listaDeOpcoesMenu = menuMobile.querySelectorAll("a");
     const footer = document.querySelector("#footer");
@@ -33,14 +32,12 @@
             menuMobile.style.display = "flex";
             mainContent.style.display = "block";
             footer.style.display = "flex";
-            // header.style.backgroundColor = "white";
         } else {
             menuMobile.style.display = "none";
             mainContent.style.display = "block";
             footer.style.display = "flex";
             burgerMenuBtn.classList.remove("fa-xmark");
             burgerMenuBtn.classList.add("fa-bars");
-            // header.style.backgroundColor = "#00000000";
         }
     };
 
@@ -56,37 +53,6 @@
         });
     };
     // FIM HEADER
-
-
-    // INICIO COLOR MODE
-
-    const chk = document.querySelector("#chk");
-
-    chk.addEventListener("change", modoEscuro);
-    window.addEventListener("load", armazenaModoNoLocal);
-
-    function armazenaModoNoLocal() {
-        let local = localStorage.getItem("modoSalvo");
-        local = JSON.parse(local);
-        if (!local) return;
-        if (local.modo) {
-            modoEscuro();
-            chk.checked = true;
-        }
-    }
-
-    let dark = false;
-
-    function modoEscuro() {
-        dark = !dark;
-        const modoAtual = JSON.stringify({ modo: dark });
-        localStorage.setItem("modoSalvo", modoAtual);
-
-        const body = document.querySelector("body");
-        body.classList.toggle("dark-mode");
-        header.classList.toggle("dark-mode");
-    }
-    // FIM COLOR MODE
 })();
 
 
@@ -154,28 +120,6 @@
 
     })
     // FIM SLIDE
-
-
-    // INICIO SEÇÃO DESTINOS
-
-    // const verMaisBtn = document.querySelector("#ver-mais-btn");
-    // const cartoesProjetos = Array.from(document.querySelectorAll("#show-hide"));
-
-    // verMaisBtn.addEventListener("click", function () {
-    //     cartoesProjetos.forEach(cartao => {
-    //         if (cartao.classList.contains("hide")) {
-    //             cartao.classList.remove("hide");
-    //             cartao.classList.add("show");
-    //             verMaisBtn.innerText = "Mostrar menos";
-    //         } else {
-    //             cartao.classList.remove("show");
-    //             cartao.classList.add("hide");
-    //             verMaisBtn.innerText = "Mostrar mais";
-    //         }
-    //     })
-    // })
-
-    // FIM SECAO DESTINOS
 })();
 
 

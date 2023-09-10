@@ -15,19 +15,8 @@
     font-family: var(--fonte-primaria);
 }
 
-.dark-mode {
-    background-color: var(--dark-mode-bg);
-    color: var(--dark-mode-font);
-}
-
-.clear-mode {
-    background-color: var(--clear-mode-bg);
-    color: var(--clear-mode-font);
-}
-
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -45,17 +34,18 @@ body {
     margin: 0px auto;
     max-width: 1300px;
     display: grid;
-    /* grid-template-columns: auto auto auto; */
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 15px;
-    /* background-color: #333;
-    border: 3px solid red; */
     padding: 15px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h2 {
+    color: #09d;
 }
 
 /* INICIO HEADER */
@@ -82,17 +72,9 @@ header ul.navigation-menu {
 
 
 /* INICIO SLIDE */
-/* * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: verdana, sans-serif;
-} */
-
 .section-slide {
     background-color: #57A2BA55;
-    padding-top: 60px;
+    padding: 60px 0px 50px 0px;
 }
 
 .mySlides {
@@ -103,10 +85,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* .mySlides .text{
-    background-color: rgba(0, 0, 0, 0.3);
-} */
-
 .mySlides img {
     vertical-align: middle;
     width: 100%;
@@ -114,7 +92,6 @@ body {
 
 .slideshow-container {
     max-width: 900px;
-    /*redimencionar*/
     position: relative;
     margin: auto;
 }
@@ -154,7 +131,6 @@ body {
     width: 100%;
     text-align: center;
     bottom: 8px;
-
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -209,33 +185,18 @@ body {
         opacity: 1
     }
 }
-
-
-
-
-/* @media only screen and (max-width:500px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 14px;
-    }
-} */
-
 /* FIM SLIDE */
 
 
 /* INICIO DESTINOS */
 .section-destinos {
-    /* background-color: #333; */
+    background: linear-gradient(#fff, #57a1ba94);
     padding-top: 60px;
     padding-bottom: 20px;
 }
 
 .section-destinos .container-grid .grid-card {
-    /* background-color: #ddd; */
     padding: 10px;
-    /* border: 1px solid blue; */
     flex-direction: column;
     border-radius: 10px;
 }
@@ -245,6 +206,7 @@ body {
     margin-top: 10px;
     font-size: .8em;
     text-align: center;
+    font-weight: 500;
 }
 
 .section-destinos .container-grid img {
@@ -280,7 +242,6 @@ body {
 .show {
     display: flex;
 }
-
 /* FIM DESTINOS */
 
 
@@ -301,7 +262,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .section-historia p{
@@ -333,16 +293,13 @@ body {
 
 .section-contact h2 {
     font-size: 2rem;
-    /* color: #fff; */
     margin-bottom: 2rem;
     text-align: center;
     line-height: 1.2;
 }
 
-
-
 .form-section-container {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -355,13 +312,10 @@ body {
     text-align: center;
 }
 
-
-
 .form {
     width: 80%;
     max-width: 32rem;
     font-size: 1.1rem;
-
     background-color: #232c35;
     padding: 30px;
     border-radius: 20px;
@@ -423,15 +377,13 @@ body {
     outline: none;
     background-color: #09d;
 }
-
 /* FIM CONTATO */
 
 
 /* FOOTER */
 .footer {
     min-height: 50px;
-    /* font-weight: bold; */
-    background-color: black;
+    background-color: #09d;
     color: white;
 }
 
@@ -439,5 +391,4 @@ body {
 p {
     margin: 5px;
 }
-
 /* FIM DO FOOTER */
