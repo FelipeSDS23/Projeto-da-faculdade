@@ -9,9 +9,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;
+        height: 40px;
         background-color: white;
-        width: 50px;
+        width: 40px;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -38,7 +38,7 @@
 
     /* INICIO SLIDE */
     .section-slide {
-        padding: 60px 0px 0px 0px;
+        padding: 50px 0px 0px 0px;
     }
 
     .slideshow-container {
