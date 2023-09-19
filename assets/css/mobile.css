@@ -28,6 +28,7 @@
         justify-content: center;
         flex-direction: column;
         height: 100vh;
+        background-color: white;
     }
 
     header ul.navigation-menu li {
