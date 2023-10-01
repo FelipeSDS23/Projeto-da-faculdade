@@ -34,6 +34,10 @@
     header ul.navigation-menu li {
         padding: 35px 25px;
     }
+
+    header ul.navigation-menu li a{
+        padding: 10px;
+    }
     /* FIM HEADER */
 
 
